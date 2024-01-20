@@ -7,10 +7,9 @@ KERNEL_CONFIG_COMMAND = "oe_runmake_call -C ${S} CC="${KERNEL_CC}" O=${B} olddef
 COMPATIBLE_MACHINE = "logicpd"
 
 KERNEL_DEVICETREE = "\
-    ti/omap/logicpd-som-lv-35xx-devkit.dtb \
     ti/omap/logicpd-som-lv-37xx-devkit.dtb \
-    ti/omap/logicpd-torpedo-35xx-devkit.dtb \
     ti/omap/logicpd-torpedo-37xx-devkit.dtb \
+    ti/omap/logicpd-torpedo-37xx-devkit-28.dtb \
 "
 
 LINUX_VERSION = "6.7"
