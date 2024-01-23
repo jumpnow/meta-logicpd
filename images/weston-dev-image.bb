@@ -22,7 +22,8 @@ GTK_STUFF = " \
     gtkmm3-dev \
 "
 
-TSLIB = " \
+TS_STUFF = " \
+    evtest evtest-dev \
     tslib-conf \
     tslib-calibrate \
     tslib \
@@ -30,6 +31,7 @@ TSLIB = " \
 
 WESTON_STUFF = " \
     weston-dev \
+    weston-examples \
     weston-init \
 "
 
@@ -37,7 +39,7 @@ IMAGE_INSTALL += " \
     ${FONTS} \
     ${NET_STUFF} \
     ${GTK_STUFF} \
-    ${TSLIB} \
+    ${TS_STUFF} \
     ${WESTON_STUFF} \
 "
 
