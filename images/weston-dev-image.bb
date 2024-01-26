@@ -20,10 +20,15 @@ NET_STUFF = " \
 GTK_STUFF = " \
     gtk+3-dev \
     gtkmm3-dev \
+    gtk4-dev \
 "
 
 TS_STUFF = " \
-    evtest evtest-dev \
+    evtest \
+    evtest-dev \
+    libinput-bin \
+    libinput-dbg \
+    libinput-dev \
     tslib-conf \
     tslib-calibrate \
     tslib \
