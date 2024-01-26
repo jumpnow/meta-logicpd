@@ -1,0 +1,5 @@
+# the touchscreen driver for the devkit board is tsc2004
+SUBSYSTEM=="input", KERNEL=="event[0-9]*", ATTRS{modalias}=="tsc2004", SYMLINK+="input/touchscreen0"
+
+# want a 90 degree rotation to match our preferred display orientation
+SUBSYSTEM=="input", KERNEL=="event[0-9]*", ENV{ID_INPUT_TOUCHSCREEN}=="1", ENV{LIBINPUT_CALIBRATION_MATRIX}="0 -1 1 1 0 0"
