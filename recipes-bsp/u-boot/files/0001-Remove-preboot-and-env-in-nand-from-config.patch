@@ -1,0 +1,43 @@
+From 8f1edb24b5570e882daead95bebdd5436187f32c Mon Sep 17 00:00:00 2001
+From: Scott Ellis <scott-ellis@idexx.com>
+Date: Wed, 31 Jan 2024 08:36:14 -0500
+Subject: [PATCH] Remove preboot and env in nand from config
+
+Upstream-Status: Inappropriate [project specific]
+
+---
+ configs/omap3_logic_defconfig | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/configs/omap3_logic_defconfig b/configs/omap3_logic_defconfig
+index cc1f418564b..98d466a05d3 100644
+--- a/configs/omap3_logic_defconfig
++++ b/configs/omap3_logic_defconfig
+@@ -16,11 +16,11 @@ CONFIG_TARGET_OMAP3_LOGIC=y
+ CONFIG_SYS_MONITOR_LEN=262144
+ CONFIG_SPL=y
+ CONFIG_LTO=y
+-CONFIG_ANDROID_BOOT_IMAGE=y
++# CONFIG_ANDROID_BOOT_IMAGE=y
+ CONFIG_DISTRO_DEFAULTS=y
+ CONFIG_BOOTCOMMAND="run autoboot"
+-CONFIG_USE_PREBOOT=y
+-CONFIG_PREBOOT="setenv preboot;saveenv;"
++# CONFIG_USE_PREBOOT is not set
++# CONFIG_PREBOOT="setenv preboot;saveenv;"
+ CONFIG_SYS_CONSOLE_INFO_QUIET=y
+ CONFIG_SPL_MAX_SIZE=0xec00
+ CONFIG_SPL_SYS_MALLOC_SIMPLE=y
+@@ -62,7 +62,8 @@ CONFIG_OF_CONTROL=y
+ CONFIG_SPL_OF_CONTROL=y
+ CONFIG_ENV_OVERWRITE=y
+ # CONFIG_ENV_IS_IN_FAT is not set
+-CONFIG_ENV_IS_IN_NAND=y
++# CONFIG_ENV_IS_IN_NAND=y
++CONFIG_ENV_IS_NOWHERE=y
+ CONFIG_VERSION_VARIABLE=y
+ CONFIG_SPL_DM=y
+ CONFIG_DM_I2C=y
+-- 
+2.34.1
+
