@@ -12,5 +12,6 @@ BBLAYERS ?= " \
   ${HOME}/poky-nanbield/meta-openembedded/meta-networking \
   ${HOME}/poky-nanbield/meta-openembedded/meta-python \
   ${HOME}/poky-nanbield/meta-security \
+  ${HOME}/poky-nanbield/meta-qt6 \
   ${HOME}/logicpd/meta-logicpd \
 "

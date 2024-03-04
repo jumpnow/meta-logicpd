@@ -10,11 +10,11 @@ This layer depends on:
     branch: nanbield
 
     URI: https://code.qt.io/yocto/meta-qt6.git
-    branch: 6.6
+    branch: 6.7
 
 Latest commits:
 
     poky 1a5c00f00c
     meta-openembedded da9063bdf
     meta-security 5938fa5
-    meta-qt6 a437c9d
+    meta-qt6 9c1bca4
